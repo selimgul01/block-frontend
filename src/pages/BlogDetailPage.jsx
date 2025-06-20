@@ -76,7 +76,7 @@ const BlogDetailPage = () => {
         />
 
         <div className=" text-cyan-900 font-semibold text-lg ">{content}</div>
-        <div className="flex items-center justify-end text-cyan-900 font-semibold border-b">Created by: {currentUser.username}</div>
+        <div className="flex items-center justify-end text-cyan-900 font-semibold border-b">Created by: {currentUser?.username}</div>
       </div>
     </>
   );
