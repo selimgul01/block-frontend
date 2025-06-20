@@ -71,7 +71,7 @@ const BlogDetailPage = () => {
 
         <img
           className="w-full   rounded-md "
-          src={`http://localhost:5000/uploads/${image}`}
+          src={`https://blog-backend-hn49.onrender.com/uploads/${image}`}
           alt="react"
         />
 

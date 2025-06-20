@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const API_BASE = "http://localhost:5000/auth";
+const API_BASE = "https://blog-backend-hn49.onrender.com/auth";
 
 export const registerUser = createAsyncThunk("auth/registerUser",async(authData,thunkAPI)=>{
     try {

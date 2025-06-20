@@ -9,7 +9,7 @@ const BlogCard = ({post}) => {
   return (
     <div className=" w-full  flex flex-col  space-y-2 bg-white shadow-lg">
       <div className="h-[275px]">
-        <img src={`http://localhost:5000/uploads/${image}`} alt="react" className="w-full h-full " />
+        <img src={`https://blog-backend-hn49.onrender.com/uploads/${image}`} alt="react" className="w-full h-full " />
       </div>
 
       <div className="flex flex-col space-y-4 px-2">

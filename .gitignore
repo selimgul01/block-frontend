@@ -1,3 +1,7 @@
+#dependencies
+node_modules
+.env
+
 # Logs
 logs
 *.log
@@ -11,6 +15,12 @@ node_modules
 dist
 dist-ssr
 *.local
+
+
+
+# build
+dist
+build
 
 # Editor directories and files
 .vscode/*
