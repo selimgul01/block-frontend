@@ -196,6 +196,7 @@ export const postSlice = createSlice({
       state.posts = state.posts.filter(
         (post) => post._id !== action.payload._id
       );
+      state.myPosts = state.myPosts.filter((post)=> post._id !== action.payload._id )
     });
     builder.addCase(deletePost.rejected, (state, action) => {
       state.loading = false;
