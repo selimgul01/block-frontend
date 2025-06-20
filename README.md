@@ -1,12 +1,26 @@
-# React + Vite
+BlogApp
+BlogApp, kullanıcıların kendi hesapları ile giriş yapıp, blog gönderileri oluşturabildiği, düzenleyebildiği, silebildiği ve görüntüleyebildiği tam özellikli bir MERN stack (MongoDB, Express, React, Node.js) blog uygulamasıdır.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Özellikler
+Kullanıcı kayıt ve giriş sistemi (JWT ile güvenli kimlik doğrulama)
 
-Currently, two official plugins are available:
+Kullanıcıya özel blog gönderileri oluşturma, düzenleme ve silme
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tüm gönderileri listeleme ve detay sayfası
 
-## Expanding the ESLint configuration
+Resim yükleme desteği (Multer ile dosya yönetimi)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Anlık frontend güncellemeleri Redux Toolkit ile yönetiliyor
+
+Proje backend ve frontend olarak ayrı dizinlerde yapılandırıldı
+
+CORS ayarları, güvenlik ve hata yönetimi iyileştirildi
+
+Deploy için hazır (Render ve Vercel üzerinde barındırma örnekleri)
+
+Teknolojiler
+Backend: Node.js, Express, MongoDB, Mongoose, Multer, JWT, bcrypt
+
+Frontend: React, Redux Toolkit, React Router, Tailwind CSS, Axios
+
+Deploy: Render (Backend), Vercel (Frontend)
