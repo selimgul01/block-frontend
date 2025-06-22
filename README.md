@@ -1,4 +1,4 @@
-BlogApp
+
 BlogApp, kullanıcıların kendi hesapları ile giriş yapıp, blog gönderileri oluşturabildiği, düzenleyebildiği, silebildiği ve görüntüleyebildiği tam özellikli bir MERN stack (MongoDB, Express, React, Node.js) blog uygulamasıdır.
 
 Özellikler
