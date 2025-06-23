@@ -4,9 +4,11 @@ import axios from "axios";
 
 const API_BASE = "https://blog-backend-hn49.onrender.com/post";
 
-export const getAllPosts = createAsyncThunk("getPosts", async (_, thunkAPI) => {
+export const getAllPosts = createAsyncThunk("getPosts", async (tags, thunkAPI) => {
   try {
-    const response = await axios.get(API_BASE);
+    const url = tags ? `${API_BASE}?tags=${tags}`: API_BASE
+
+    const response = await axios.get(url);
     return response.data;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.response.data.message);
@@ -19,7 +21,7 @@ export const getMyPosts = createAsyncThunk("getMyPosts", async () => {
     const response = await axios.get(`${API_BASE}/my-posts`, {
       headers: {
         Authorization: `Bearer ${token}`,
-      },
+      }, 
     });
     return response.data;
   } catch (error) {

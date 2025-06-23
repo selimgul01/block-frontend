@@ -13,11 +13,13 @@ import PostDetailtSkeleton from './skeleton/PostDetailtSkeleton';
 function App() {
 
   const {loading} = useSelector(state => state.posts)
-
+  const {isAuthenticated} = useSelector(state => state.auth)
+  
   return (
-    <div className=' bg-[#F9F9F7] w-full h-screen'>
+    <div className=' w-full '>
      <BrowserRouter>
-     { loading ? <NavbarSkeleton/> : <Navbar/> }
+     
+     {(loading ? <NavbarSkeleton/> : <Navbar/> )}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/my-posts" element={<MyPosts />} />

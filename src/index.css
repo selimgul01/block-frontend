@@ -12,6 +12,7 @@ body {
     background-color: #F9F9F7;
     overflow-x: hidden;
     overflow-y: scroll;
+    background-color: #e8e7ec
 }
 
 @layer components{ 
@@ -19,9 +20,9 @@ body {
         @apply border p-2 rounded-md outline-none
     }
     .auth-container{
-        @apply w-full h-screen bg-gray-50 flex items-center justify-center 
+        @apply container m-auto w-full  bg-gray-50 flex items-center justify-center rounded-xl
     }
     .auth-btn{
-        @apply w-full text-center p-2 bg-blue-600 text-white rounded-md cursor-pointer hover:bg-blue-800
+        @apply w-full text-center p-2 font-semibold tracking-wider bg-purple-600 text-white rounded-md cursor-pointer hover:bg-purple-900
     }   
 }

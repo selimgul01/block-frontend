@@ -15,12 +15,12 @@ const MyPosts = () => {
   useEffect(() => {
     dispatch(getMyPosts());
   }, [dispatch]);
-
+ 
   return (
-    <>
+    <div className="container m-auto  mt-20">
       
       {myPosts.length <= 0 ? (
-        <div className=" w-full h-screen flex items-center justify-center pb-20">
+        <div className=" w-full h-full flex items-center justify-center pb-20">
           {isModalOpen && <NewContentModal />}
           <div
             onClick={()=>dispatch(openModal())}
@@ -31,7 +31,7 @@ const MyPosts = () => {
           </div>
         </div>
       ) : (
-        <div className="max-w-screen-xl m-auto mt-20  grid grid-cols-3 gap-5 ">
+        <div className="  xl:grid xl:grid-cols-3 gap-5 flex flex-col ">
           {isModalOpen && <NewContentModal />}
           {loading
             ? Array.from({ length: 12 })?.map((_, i) => (
@@ -40,7 +40,7 @@ const MyPosts = () => {
             : myPosts?.map((post, i) => <BlogCard post={post} key={i} />)}
         </div>
       )}
-    </>
+    </div>
   );
 };
 
