@@ -1,26 +1,50 @@
+# 📝 TechBlog - MERN Stack Blog Uygulaması
 
-BlogApp, kullanıcıların kendi hesapları ile giriş yapıp, blog gönderileri oluşturabildiği, düzenleyebildiği, silebildiği ve görüntüleyebildiği tam özellikli bir MERN stack (MongoDB, Express, React, Node.js) blog uygulamasıdır.
+**TechBlog**, kullanıcıların hesap oluşturup giriş yapabildiği, kendi içeriklerini oluşturabildiği, düzenleyip silebildiği ve diğer içerikleri görebildiği tam kapsamlı bir blog platformudur. Uygulama modern teknolojilerle oluşturulmuştur ve tamamen responsive'dir.
 
-Özellikler
-Kullanıcı kayıt ve giriş sistemi (JWT ile güvenli kimlik doğrulama)
+## 🚀 Canlı Proje
 
-Kullanıcıya özel blog gönderileri oluşturma, düzenleme ve silme
+- 🖥️ Frontend (Vercel): [https://block-frontend-zeta.vercel.app](https://block-frontend-zeta.vercel.app)  
+- 🔧 Backend (Render): [https://blog-backend-hn49.onrender.com](https://blog-backend-hn49.onrender.com)
 
-Tüm gönderileri listeleme ve detay sayfası
+---
 
-Resim yükleme desteği (Multer ile dosya yönetimi)
+## 🛠️ Kullanılan Teknolojiler
 
-Anlık frontend güncellemeleri Redux Toolkit ile yönetiliyor
+### ✅ Frontend
 
-Proje backend ve frontend olarak ayrı dizinlerde yapılandırıldı
+- **React** + **Vite**
+- **Tailwind CSS**
+- **Redux Toolkit** (store yönetimi)
+- **Axios** (API istekleri)
+- **React Router DOM**
+- **React Toastify** (bildirimler)
 
-CORS ayarları, güvenlik ve hata yönetimi iyileştirildi
+### ✅ Backend
 
-Deploy için hazır (Render ve Vercel üzerinde barındırma örnekleri)
+- **Node.js** + **Express.js**
+- **MongoDB** + **Mongoose**
+- **Multer** (görsel yükleme)
+- **jsonwebtoken (JWT)** (kimlik doğrulama)
+- **bcrypt** (şifre şifreleme)
+- **dotenv**, **cors**, **helmet** vb.
 
-Teknolojiler
-Backend: Node.js, Express, MongoDB, Mongoose, Multer, JWT, bcrypt
+---
 
-Frontend: React, Redux Toolkit, React Router, Tailwind CSS, Axios
+## 🧑‍💻 Özellikler
 
-Deploy: Render (Backend), Vercel (Frontend)
+- 🔐 Kullanıcı **kayıt** ve **giriş** sistemi
+- 🖼️ **Görsel yüklemeli** gönderi oluşturma
+- 📝 Kullanıcıya özel **post oluşturma**, **düzenleme** ve **silme**
+- 🗂️ Gönderileri **tag (kategori)** filtresi ile listeleme
+- 🔍 **Arama** özelliği
+- 🌐 API bağlantı kontrolü ve **CORS yapılandırması**
+- 💬 **Geribildirim mesajları** (başarılı işlem, hata, vs.)
+- 📱 Mobil uyumlu ve modern arayüz
+
+---
+
+## 🖼️ Ekran Görüntüleri
+
+> Ekran görüntüleri burada olabilir (isteğe bağlı):
+
