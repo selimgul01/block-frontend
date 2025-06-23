@@ -41,7 +41,7 @@ const BlogDetailPage = () => {
   const { title, subtitle, tags, content, image } = singlePost;
 
   return (
-    <div className="container m-auto flex items-start justify-between space-x-4 my-10">
+    <div className="container m-auto flex items-start justify-center space-x-4 my-10">
       {isEdit && <NewContentModal />}
       <div className=" p-5 flex flex-col space-y-10 bg-white   rounded-md">
         <div className="flex flex-col space-y-5">
