@@ -13,7 +13,6 @@ import PostDetailtSkeleton from './skeleton/PostDetailtSkeleton';
 function App() {
 
   const {loading} = useSelector(state => state.posts)
-  const {isAuthenticated} = useSelector(state => state.auth)
   
  
   return (

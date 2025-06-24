@@ -2,8 +2,9 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const API_BASE = "http://localhost:5000 
-https://blog-backend-hn49.onrender.com/auth";
+const API_BASE = "https://blog-backend-hn49.onrender.com"
+
+
 
 export const registerUser = createAsyncThunk(
   "auth/registerUser",
@@ -56,7 +57,6 @@ const initialState = {
   token: localStorage.getItem("token") || null,
   loading: false,
   error: null,
-  isAuthenticated: localStorage.getItem("token")
 };
 
 export const authSlice = createSlice({
@@ -67,7 +67,6 @@ export const authSlice = createSlice({
       state.user = null;
       state.token = null;
       state.loading = false;
-      state.isAuthenticated = false
       localStorage.clear();
     },
   },
@@ -80,7 +79,6 @@ export const authSlice = createSlice({
       state.user = action.payload.user;
       state.token = action.payload.token;
       state.loading = false;
-      state.isAuthenticated = true
     });
     builder.addCase(registerUser.rejected, (state, action) => {
       state.loading = false;
@@ -95,7 +93,6 @@ export const authSlice = createSlice({
       state.user = action.payload.user;
       state.token = action.payload.token;
       state.loading = false;
-      state.isAuthenticated = true
     });
     builder.addCase(loginUser.rejected, (state, action) => {
       state.loading = false;
