@@ -2,7 +2,7 @@ import { CiHashtag } from "react-icons/ci";
 import {useDispatch}  from "react-redux"
 import { getAllPosts } from "../redux/posts/postSlice";
 
-
+ 
 const tags = ["teknoloji", "programlama", "gundem", "sağlık", "bilim"];
 
 const Tags = () => {

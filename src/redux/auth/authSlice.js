@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const API_BASE = "https://blog-backend-hn49.onrender.com"
+const API_BASE = "https://blog-backend-hn49.onrender.com/auth"
 
 
 
@@ -29,14 +29,13 @@ export const loginUser = createAsyncThunk(
       const response = await axios.post(`${API_BASE}/login`, authData);
       localStorage.setItem("token", response.data.token);
       localStorage.setItem("user", JSON.stringify(response.data.user));
-      
-
       toast.success(response.data.message);
       return response.data;
     } catch (error) {
       const errorMessage = error.response?.data?.message || "Sunucu Hatası";
+      console.log("Login error:", error.response?.data || error.message);
       toast.error(errorMessage);
-      return thunkAPI.rejectWithValue(errorMessage);
+      return thunkAPI.rejectWithValue(error.response?.data?.message);
     }
   }
 );
@@ -57,7 +56,7 @@ const initialState = {
   token: localStorage.getItem("token") || null,
   loading: false,
   error: null,
-  isAuthenticated: localStorage.getItem("token")
+  isAuthenticated: null
 };
 
 export const authSlice = createSlice({

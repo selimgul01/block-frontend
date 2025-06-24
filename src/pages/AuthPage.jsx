@@ -7,7 +7,7 @@ import { loginUser, registerUser } from "../redux/auth/authSlice";
 const Auth = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { loading , isAuthenticated} = useSelector((state) => state.auth);
+  const { loading , token} = useSelector((state) => state.auth);
 
   const [signUp, setSignUp] = useState(true);
   const [authData, setAuthData] = useState({
@@ -22,10 +22,10 @@ const Auth = () => {
   };
 
   useEffect(()=>{
-    if (isAuthenticated) {
+    if (token) {
       navigate("/")
     }
-  },[isAuthenticated])
+  },[token])
  
   const submitHandler = () => {
     if (signUp) {
