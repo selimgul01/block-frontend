@@ -4,7 +4,7 @@
 
 ## 🚀 Canlı Proje
 
-- 🖥️ Frontend (Vercel): [https://block-frontend-zeta.vercel.app](https://block-frontend-zeta.vercel.app)  
+- 🖥️ Frontend (Vercel): [block-frontend-git-main-selims-projects-c3c368e9.vercel.app  ](https://block-frontend-git-main-selims-projects-c3c368e9.vercel.app/)
 - 🔧 Backend (Render): [https://blog-backend-hn49.onrender.com](https://blog-backend-hn49.onrender.com)
 
 ---
