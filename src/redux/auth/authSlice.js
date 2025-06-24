@@ -57,6 +57,7 @@ const initialState = {
   token: localStorage.getItem("token") || null,
   loading: false,
   error: null,
+  isAuthenticated: localStorage.getItem("token")
 };
 
 export const authSlice = createSlice({
@@ -67,7 +68,6 @@ export const authSlice = createSlice({
       state.user = null;
       state.token = null;
       state.loading = false;
-      state.isAuthenticated = false
       localStorage.clear();
     },
   },
