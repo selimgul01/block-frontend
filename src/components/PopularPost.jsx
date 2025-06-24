@@ -1,17 +1,19 @@
 import { CiClock2 } from "react-icons/ci";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const PopularPost = () => {
   const { posts } = useSelector((state) => state.posts);
+  const navigate = useNavigate()
 
-
+  
   return (
-    <div className="bg-white w-full xl:w-[400px] flex flex-col space-y-5  px-5 py-5 rounded-lg cursor-pointer">
+    <div  className="bg-white w-full xl:w-[400px] flex flex-col space-y-5  px-5 py-5 rounded-lg cursor-pointer">
       <h1 className=" text-xl font-bold text-slate-800 mb-5">
         Popüler Gönderiler
       </h1>
-      {posts?.slice(0, 4).map((post) => (
-        <div className="flex items-start justify-start   space-x-3 hover:scale-105 transition-all ">
+      {posts?.slice(0, 4).map((post,i) => (
+        <div onClick={()=>navigate(`detail/${post._id}`)} key={i}  className="flex items-start justify-start   space-x-3 hover:scale-105 transition-all ">
           <img
             className="object-cover w-[120px] h-full rounded-lg"
             src={`https://blog-backend-hn49.onrender.com/uploads/${post?.image}`}

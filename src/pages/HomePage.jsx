@@ -20,8 +20,8 @@ const HomePage = () => {
   return (
     <div className="container m-auto" >
       <Hero/>
-      <div className="mt-10  xl:flex  xl:justify-between  xl:space-x-5  space-y-3 pb-20  ">
-        <div className="">
+      <div className="mt-10  xl:flex  xl:justify-between   xl:space-x-5  space-y-3 pb-20  ">
+        <div className="p-3">
           <Tags />
         </div>
         <div className=" flex flex-col space-y-5 rounded-lg ">

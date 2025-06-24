@@ -76,7 +76,7 @@ const NewContentModal = () => {
   return (
     <>
       <div className="w-full min-h-screen bg-opacity-50 bg-black fixed top-0 left-0 right-0 bottom-0 z-50 flex items-center justify-center  ">
-        <form className="w-1/3  rounded-xl bg-white p-5 relative">
+        <form className="xl:w-1/3 w-10/12  rounded-xl bg-white p-5 relative">
           <div
             onClick={closeClickHandler}
             className=" absolute right-5 text-2xl cursor-pointer "

@@ -19,7 +19,7 @@ function App() {
     <div className=' w-full '>
      <BrowserRouter>
      
-     {(loading ? <NavbarSkeleton/> : <Navbar/> )}
+     {isAuthenticated && (loading ? <NavbarSkeleton/> : <Navbar/> )}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/my-posts" element={<MyPosts />} />

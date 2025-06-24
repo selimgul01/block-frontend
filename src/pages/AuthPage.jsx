@@ -33,7 +33,7 @@ const Auth = () => {
     } else {
       dispatch(loginUser(authData));
     }
-  };
+  }; 
 
   return (
     <div className="  mx-auto w-full  bg-gray-50 flex items-center justify-center md:flex-row rounded-xl flex-col ">
