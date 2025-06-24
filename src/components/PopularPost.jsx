@@ -16,7 +16,8 @@ const PopularPost = () => {
         <div onClick={()=>navigate(`detail/${post._id}`)} key={i}  className="flex items-start justify-start   space-x-3 hover:scale-105 transition-all ">
           <img
             className="object-cover w-[120px] h-full rounded-lg"
-            src={`https://blog-backend-hn49.onrender.com/uploads/${post?.image}`}
+            src={`http://localhost:5000 
+https://blog-backend-hn49.onrender.com/uploads/${post?.image}`}
             alt=""
           />
           <div className="flex flex-col">

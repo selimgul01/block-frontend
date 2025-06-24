@@ -9,7 +9,8 @@ const BlogCard = ({post}) => {
   return (
     <div className=" w-full  flex flex-col  space-y-2 bg-white shadow-lg rounded-lg ">
       <div className=" w-full h-full  flex items-center justify-center pt-5 pb-2 ">
-        <img src={`https://blog-backend-hn49.onrender.com/uploads/${image}`} alt="react" className="w-[300px] h-[150px] object-cover hover:scale-110 transition-all  rounded-2xl" />
+        <img src={`http://localhost:5000 
+https://blog-backend-hn49.onrender.com/uploads/${image}`} alt="react" className="w-[300px] h-[150px] object-cover hover:scale-110 transition-all  rounded-2xl" />
       </div>
 
       <div className="flex flex-col space-y-4 px-2">

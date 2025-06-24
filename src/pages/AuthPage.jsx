@@ -36,7 +36,7 @@ const Auth = () => {
   }; 
 
   return (
-    <div className="  mx-auto w-full  bg-gray-50 flex items-center justify-center md:flex-row rounded-xl flex-col ">
+    <div className=" container mx-auto w-full  bg-gray-50 flex items-center justify-center md:flex-row rounded-xl flex-col ">
       <div className="flex items-center justify-center w-full h-screen xl:basis-7/12  ">
         <div className="bg-white w-10/12 p-10 flex flex-col space-y-10">
           <h1 className="text-3xl text-center text-purple-600 font-bold ">

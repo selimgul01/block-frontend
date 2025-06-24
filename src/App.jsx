@@ -1,6 +1,6 @@
 import toast, { Toaster } from 'react-hot-toast';
 import './App.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
 import HomePage from './pages/HomePage'
 import Navbar from './components/Navbar'
 import BlogDetailPage from './pages/BlogDetailPage'
@@ -15,11 +15,12 @@ function App() {
   const {loading} = useSelector(state => state.posts)
   const {isAuthenticated} = useSelector(state => state.auth)
   
+ 
   return (
     <div className=' w-full '>
      <BrowserRouter>
      
-     {isAuthenticated && (loading ? <NavbarSkeleton/> : <Navbar/> )}
+     {(loading ? <NavbarSkeleton/> : <Navbar/> )}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/my-posts" element={<MyPosts />} />

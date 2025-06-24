@@ -5,7 +5,9 @@
 ## 🚀 Canlı Proje
 
 - 🖥️ Frontend (Vercel): [https://block-frontend-zeta.vercel.app](https://block-frontend-zeta.vercel.app)  
-- 🔧 Backend (Render): [https://blog-backend-hn49.onrender.com](https://blog-backend-hn49.onrender.com)
+- 🔧 Backend (Render): [http://localhost:5000 
+https://blog-backend-hn49.onrender.com](http://localhost:5000 
+https://blog-backend-hn49.onrender.com)
 
 ---
 

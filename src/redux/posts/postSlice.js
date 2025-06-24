@@ -2,7 +2,8 @@ import { toast } from "react-hot-toast";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_BASE = "https://blog-backend-hn49.onrender.com/post";
+const API_BASE = "http://localhost:5000 
+https://blog-backend-hn49.onrender.com/post";
 
 export const getAllPosts = createAsyncThunk("getPosts", async (tags, thunkAPI) => {
   try {
