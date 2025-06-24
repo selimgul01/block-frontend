@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const API_BASE = "https://blog-backend-hn49.onrender.com"
+const API_BASE = "https://blog-backend-hn49.onrender.com/auth"
 
 
 
