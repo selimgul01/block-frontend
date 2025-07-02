@@ -1,7 +1,7 @@
 # 📝 TechBlog - MERN Stack Blog Uygulaması
 
 **TechBlog**, kullanıcıların hesap oluşturup giriş yapabildiği, kendi içeriklerini oluşturabildiği, düzenleyip silebildiği ve diğer içerikleri görebildiği tam kapsamlı bir blog platformudur. Uygulama modern teknolojilerle oluşturulmuştur ve tamamen responsive'dir.
-
+Güncellemeler Devam Edilecektir.
 ## 🚀 Canlı Proje
 
 - 🖥️ Frontend (Vercel): [block-frontend-git-main-selims-projects-c3c368e9.vercel.app  ](https://block-frontend-git-main-selims-projects-c3c368e9.vercel.app/)
@@ -44,7 +44,4 @@
 
 ---
 
-## 🖼️ Ekran Görüntüleri
-
-> Ekran görüntüleri burada olabilir (isteğe bağlı):
 
